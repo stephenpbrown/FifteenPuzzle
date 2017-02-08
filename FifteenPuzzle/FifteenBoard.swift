@@ -25,7 +25,7 @@ class FifteenBoard {
     // Fetch the tile at the given position (0 is used for the space).
     func getTile(atRow r : Int, atColumn c : Int) -> Int
     {
-        return 1
+        return state[r][c]
     }
     
     // Find the position of the given tile (0 is used for the space) – returns tuple holding row and column.

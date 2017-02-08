@@ -7,12 +7,12 @@ provides-member:
 - ["C13FifteenPuzzle12FifteenBoard", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "FifteenBoard"
-- "Array"
 - "Bool"
 - !private "BooleanLiteralType"
 - "IntegerLiteralType"
 - "FloatLiteralType"
+- "FifteenBoard"
+- "Array"
 - "Int"
 depends-member:
 - ["Ps9AnyObject", ""]
