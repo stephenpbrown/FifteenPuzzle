@@ -6,23 +6,27 @@ provides-nominal:
 provides-member:
 - ["C13FifteenPuzzle11AppDelegate", ""]
 provides-dynamic-lookup:
+- "numShuffles"
+- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
 - "applicationWillResignActive"
 - "application"
-- "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
 - "window"
 - "applicationDidBecomeActive"
 - "applicationWillTerminate"
 depends-top-level:
-- "UIApplicationLaunchOptionsKey"
-- "AppDelegate"
 - "Bool"
-- "UIApplication"
-- "UIApplicationDelegate"
-- "UIResponder"
 - "UIWindow"
+- "AppDelegate"
+- "UIApplication"
+- "UIApplicationLaunchOptionsKey"
 - !private "BooleanLiteralType"
+- "UIResponder"
+- "UIApplicationDelegate"
+- "FifteenBoard"
+- "AssignmentPrecedence"
 depends-member:
+- !private ["Ps9AnyObject", "FifteenBoard"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -35,10 +39,14 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
+- ["Ps9AnyObject", "board"]
 - !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "numShuffles"]
+- !private ["Ps9AnyObject", "scramble"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C13FifteenPuzzle11AppDelegate", "Bool"]
+- ["C13FifteenPuzzle11AppDelegate", "FifteenBoard"]
 - ["C13FifteenPuzzle11AppDelegate", "UIApplication"]
 - ["C13FifteenPuzzle11AppDelegate", "UIApplicationLaunchOptionsKey"]
 - ["C13FifteenPuzzle11AppDelegate", "UIWindow"]
@@ -54,10 +62,13 @@ depends-member:
 - ["C13FifteenPuzzle11AppDelegate", "applicationWillEnterForeground"]
 - ["C13FifteenPuzzle11AppDelegate", "applicationWillResignActive"]
 - ["C13FifteenPuzzle11AppDelegate", "applicationWillTerminate"]
+- ["C13FifteenPuzzle11AppDelegate", "board"]
 - ["C13FifteenPuzzle11AppDelegate", "deinit"]
 - ["C13FifteenPuzzle11AppDelegate", "init"]
+- ["C13FifteenPuzzle11AppDelegate", "numShuffles"]
 - ["C13FifteenPuzzle11AppDelegate", "window"]
 - ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "FifteenBoard"]
 - ["Ps7CVarArg", "application"]
 - ["Ps7CVarArg", "applicationDidBecomeActive"]
 - ["Ps7CVarArg", "applicationDidEnterBackground"]
@@ -70,9 +81,12 @@ depends-member:
 - ["Ps7CVarArg", "applicationWillEnterForeground"]
 - ["Ps7CVarArg", "applicationWillResignActive"]
 - ["Ps7CVarArg", "applicationWillTerminate"]
+- ["Ps7CVarArg", "board"]
 - !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "numShuffles"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "FifteenBoard"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -85,9 +99,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- ["Ps28CustomDebugStringConvertible", "board"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "numShuffles"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "FifteenBoard"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -100,9 +117,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- ["Ps23CustomStringConvertible", "board"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "numShuffles"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "FifteenBoard"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -115,9 +135,15 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
+- ["Ps9Equatable", "board"]
 - !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "numShuffles"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- ["C13FifteenPuzzle12FifteenBoard", "deinit"]
+- !private ["C13FifteenPuzzle12FifteenBoard", "init"]
+- !private ["C13FifteenPuzzle12FifteenBoard", "scramble"]
+- !private ["Ps8Hashable", "FifteenBoard"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -130,10 +156,14 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
+- ["Ps8Hashable", "board"]
 - !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "numShuffles"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- ["Si", "deinit"]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "FifteenBoard"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - ["CSo8NSObject", "UIWindow"]
@@ -149,8 +179,11 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- ["CSo8NSObject", "board"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numShuffles"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "FifteenBoard"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -163,10 +196,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- ["PSo16NSObjectProtocol", "board"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numShuffles"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Sq", "deinit"]
+- !private ["PSo21UIApplicationDelegate", "FifteenBoard"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -179,9 +215,12 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "board"]
+- !private ["PSo21UIApplicationDelegate", "numShuffles"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "FifteenBoard"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -197,10 +236,13 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillEnterForeground"]
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "board"]
 - ["CSo11UIResponder", "deinit"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "numShuffles"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSo30UIResponderStandardEditActions", "FifteenBoard"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
@@ -213,9 +255,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillEnterForeground"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
+- ["PSo30UIResponderStandardEditActions", "board"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "numShuffles"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["Ps9_Hashable", "FifteenBoard"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
 - ["Ps9_Hashable", "applicationDidEnterBackground"]
@@ -228,7 +273,9 @@ depends-member:
 - ["Ps9_Hashable", "applicationWillEnterForeground"]
 - ["Ps9_Hashable", "applicationWillResignActive"]
 - ["Ps9_Hashable", "applicationWillTerminate"]
+- ["Ps9_Hashable", "board"]
 - !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "numShuffles"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
 depends-nominal:
@@ -239,7 +286,9 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- "C13FifteenPuzzle12FifteenBoard"
 - "Ps8Hashable"
+- "Si"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "Sq"
@@ -259,4 +308,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "7e85a999868267b7cde0941f4dd635ac"
+interface-hash: "2c0b665562a079067de0f6111fe70e70"

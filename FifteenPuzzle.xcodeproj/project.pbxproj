@@ -13,6 +13,7 @@
 		AC28F94C1E43A4BB002E797E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC28F94B1E43A4BB002E797E /* Assets.xcassets */; };
 		AC28F94F1E43A4BB002E797E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC28F94D1E43A4BB002E797E /* LaunchScreen.storyboard */; };
 		AC28F9571E43AB1C002E797E /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28F9561E43AB1C002E797E /* BoardView.swift */; };
+		AC9EC8E81E4BD6B1009AB9FA /* FifteenBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EC8E71E4BD6B1009AB9FA /* FifteenBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC28F94E1E43A4BB002E797E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC28F9501E43A4BB002E797E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC28F9561E43AB1C002E797E /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		AC9EC8E71E4BD6B1009AB9FA /* FifteenBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifteenBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				AC28F9441E43A4BB002E797E /* AppDelegate.swift */,
 				AC28F9461E43A4BB002E797E /* ViewController.swift */,
 				AC28F9481E43A4BB002E797E /* Main.storyboard */,
+				AC9EC8E71E4BD6B1009AB9FA /* FifteenBoard.swift */,
 				AC28F9561E43AB1C002E797E /* BoardView.swift */,
 				AC28F94B1E43A4BB002E797E /* Assets.xcassets */,
 				AC28F94D1E43A4BB002E797E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				AC28F9571E43AB1C002E797E /* BoardView.swift in Sources */,
 				AC28F9471E43A4BB002E797E /* ViewController.swift in Sources */,
+				AC9EC8E81E4BD6B1009AB9FA /* FifteenBoard.swift in Sources */,
 				AC28F9451E43A4BB002E797E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
