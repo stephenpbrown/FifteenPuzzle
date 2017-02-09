@@ -54,15 +54,10 @@ class ViewController: UIViewController {
             NSLog("\(index) \(slideDirection)")
             
             board!.slideTile(atRow: index.row, atColumn: index.column, moveDirection: slideDirection)
-        
-            sender.center = buttonCenter
             
             // Check if solved
             
             UIView.animate(withDuration: 0.5, animations: {sender.center = buttonCenter})
-            
-            // UIView.animateWithDuration(0.5, animations: {sender.center = buttonCenter})
-            //boardView.layoutSubviews()
         }
     }
     

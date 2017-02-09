@@ -10,17 +10,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "!="
-- "Int"
-- !private "BooleanLiteralType"
 - "Array"
 - "Bool"
-- "IntegerLiteralType"
-- !private "-"
+- !private "BooleanLiteralType"
 - !private "+"
-- "FloatLiteralType"
 - !private "..<"
 - "FifteenBoard"
+- "Int"
+- "IntegerLiteralType"
+- "FloatLiteralType"
+- !private "!="
+- !private "-"
 - "=="
 - !private "~="
 depends-member:

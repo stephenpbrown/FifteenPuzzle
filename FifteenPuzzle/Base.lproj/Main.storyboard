@@ -32,6 +32,7 @@
                                                 <rect key="frame" x="27" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665140968934" green="0.99879545693802563" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="1"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWH-4Y-RQL"/>
@@ -41,6 +42,7 @@
                                                 <rect key="frame" x="105" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="2"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s37-G6-HLi"/>
@@ -50,6 +52,7 @@
                                                 <rect key="frame" x="183" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="3"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6B-HI-Iwc"/>
@@ -59,6 +62,7 @@
                                                 <rect key="frame" x="261" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="4"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofG-nw-Tv2"/>
@@ -68,6 +72,7 @@
                                                 <rect key="frame" x="27" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="5"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtT-li-ixu"/>
@@ -77,6 +82,7 @@
                                                 <rect key="frame" x="105" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="6"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smR-7t-Z3j"/>
@@ -86,6 +92,7 @@
                                                 <rect key="frame" x="183" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="7"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Uj-gn-rlc"/>
@@ -95,6 +102,7 @@
                                                 <rect key="frame" x="261" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="8"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3B-0H-zL9"/>
@@ -104,6 +112,7 @@
                                                 <rect key="frame" x="27" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="9"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qes-if-tXS"/>
@@ -113,6 +122,7 @@
                                                 <rect key="frame" x="105" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="10"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4U-bi-4TJ"/>
@@ -122,6 +132,7 @@
                                                 <rect key="frame" x="183" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="11"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFq-KD-m6e"/>
@@ -131,6 +142,7 @@
                                                 <rect key="frame" x="261" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="12"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGH-x2-StX"/>
@@ -140,6 +152,7 @@
                                                 <rect key="frame" x="27" y="259" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="13"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ach-nH-Gtm"/>
@@ -149,6 +162,7 @@
                                                 <rect key="frame" x="105" y="259" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="14"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfD-uu-iPu"/>
@@ -158,6 +172,7 @@
                                                 <rect key="frame" x="183" y="259" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="15"/>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkl-q0-uIO"/>
