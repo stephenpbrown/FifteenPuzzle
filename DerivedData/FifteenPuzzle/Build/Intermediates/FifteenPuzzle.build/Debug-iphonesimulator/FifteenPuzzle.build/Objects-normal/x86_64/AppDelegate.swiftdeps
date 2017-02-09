@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C13FifteenPuzzle11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
 - "numShuffles"
 - "applicationWillEnterForeground"
-- "window"
-- "application"
-- "applicationDidEnterBackground"
 - "applicationWillTerminate"
+- "applicationDidBecomeActive"
 - "applicationWillResignActive"
+- "applicationDidEnterBackground"
+- "application"
+- "window"
 depends-top-level:
-- "UIApplicationLaunchOptionsKey"
-- "UIResponder"
+- "AppDelegate"
 - !private "BooleanLiteralType"
 - "UIApplication"
+- "UIApplicationLaunchOptionsKey"
+- "UIResponder"
 - "Bool"
-- "UIApplicationDelegate"
-- "AppDelegate"
-- "UIWindow"
 - "FifteenBoard"
+- "UIApplicationDelegate"
+- "UIWindow"
 - "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "FifteenBoard"]

@@ -32,6 +32,39 @@ class FifteenBoard {
         
     }
     
+    // Function to slide the tiles in the direction they're able to go
+    func slideTile(atRow r : Int, atColumn c : Int, moveDirection direction : slideDirection)
+    {
+        if(direction == slideDirection.down)
+        {
+            let saveIndex = state[r][c]
+            state[r][c] = state[r+1][c]
+            state[r+1][c] = saveIndex
+        }
+        else if(direction == slideDirection.up)
+        {
+            let saveIndex = state[r][c]
+            state[r][c] = state[r-1][c]
+            state[r-1][c] = saveIndex
+        }
+        else if(direction == slideDirection.left)
+        {
+            let saveIndex = state[r][c]
+            state[r][c] = state[r][c-1]
+            state[r][c-1] = saveIndex
+        }
+        else if(direction == slideDirection.right)
+        {
+            let saveIndex = state[r][c]
+            state[r][c] = state[r][c+1]
+            state[r][c+1] = saveIndex
+        }
+        else
+        {
+            // Do nothing
+        }
+    }
+    
     // Fetch the tile at the given position (0 is used for the space).
     func getTile(atRow r : Int, atColumn c : Int) -> Int
     {
@@ -39,7 +72,7 @@ class FifteenBoard {
     }
     
     // Find the position of the given tile (0 is used for the space) – returns tuple holding row and column.
-    func getRowAndColumn(forTile tile : Int) -> (row : Int, column : Int)?
+    func getRowAndColumn(forTile tile : Int) -> (row : Int, column : Int)
     {
         for i in 0 ..< 4
         {
@@ -52,7 +85,7 @@ class FifteenBoard {
             }
         }
         
-        return (1,1) // Placeholder
+        return (0,0) // ?
     }
     
     // Determine if puzzle is in solved configuration.

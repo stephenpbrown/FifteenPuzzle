@@ -21,8 +21,6 @@ class BoardView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews() // Let autolayout engine finish first
         
-        NSLog("Taking over subview, yo") // DEBUG
-        
         let appDelegate = UIApplication.shared.delegate! as! AppDelegate
         let board = appDelegate.board // Get model from app delegate
         

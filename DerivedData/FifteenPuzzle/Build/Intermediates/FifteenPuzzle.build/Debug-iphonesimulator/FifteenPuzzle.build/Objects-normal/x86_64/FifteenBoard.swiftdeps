@@ -9,17 +9,18 @@ provides-member:
 - ["OC13FifteenPuzzle12FifteenBoard14slideDirection", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- !private "BooleanLiteralType"
-- "FifteenBoard"
-- "IntegerLiteralType"
+- "AssignmentPrecedence"
 - !private "!="
-- !private "-"
-- "FloatLiteralType"
-- !private "+"
-- !private "..<"
 - "Int"
+- !private "BooleanLiteralType"
 - "Array"
+- "Bool"
+- "IntegerLiteralType"
+- !private "-"
+- !private "+"
+- "FloatLiteralType"
+- !private "..<"
+- "FifteenBoard"
 - "=="
 - !private "~="
 depends-member:
@@ -187,6 +188,7 @@ depends-member:
 - ["C13FifteenPuzzle12FifteenBoard", "isSolved"]
 - ["C13FifteenPuzzle12FifteenBoard", "scramble"]
 - ["C13FifteenPuzzle12FifteenBoard", "slideDirection"]
+- ["C13FifteenPuzzle12FifteenBoard", "slideTile"]
 - ["C13FifteenPuzzle12FifteenBoard", "solved"]
 - ["C13FifteenPuzzle12FifteenBoard", "state"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -479,4 +481,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "553a2ea8ec609a0154bc9ef9c6236904"
+interface-hash: "928f0ae1d5ab92688a06bf9db91b7bd9"
