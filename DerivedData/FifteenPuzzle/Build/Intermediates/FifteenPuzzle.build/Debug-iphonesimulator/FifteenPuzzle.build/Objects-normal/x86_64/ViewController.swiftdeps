@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C13FifteenPuzzle14ViewController", ""]
 provides-dynamic-lookup:
-- "boardView"
-- "shuffleTiles"
-- "didReceiveMemoryWarning"
 - "tileSelected"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "boardView"
+- "shuffleTiles"
 depends-top-level:
-- "UIViewController"
 - "BoardView"
-- "ViewController"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
-- !private "-="
 - "AnyObject"
-- !private "BooleanLiteralType"
-- !private "NSLog"
-- !private "+="
-- !private "AppDelegate"
-- "UIButton"
-- !private "UIView"
-- "CastingPrecedence"
+- "UIViewController"
 - "AssignmentPrecedence"
+- "ViewController"
+- "CastingPrecedence"
+- !private "+="
+- !private "UnicodeScalarType"
+- !private "AppDelegate"
+- !private "-="
+- !private "StringLiteralType"
+- !private "UIView"
 - !private "UIApplication"
+- !private "BooleanLiteralType"
+- "UIButton"
+- !private "NSLog"
 depends-member:
 - !private ["Ps9AnyObject", "NSLog"]
 - !private ["Ps9AnyObject", "UIApplication"]
@@ -46,6 +46,10 @@ depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "getRowAndColumn"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isSolved"]
+- !private ["Ps9AnyObject", "numShuffles"]
+- !private ["Ps9AnyObject", "scramble"]
+- !private ["Ps9AnyObject", "setNeedsLayout"]
 - !private ["Ps9AnyObject", "shared"]
 - ["Ps9AnyObject", "shuffleTiles"]
 - !private ["Ps9AnyObject", "slideTile"]
@@ -55,11 +59,14 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["C13FifteenPuzzle11AppDelegate", "board"]
 - ["C13FifteenPuzzle11AppDelegate", "deinit"]
+- !private ["C13FifteenPuzzle11AppDelegate", "numShuffles"]
+- !private ["C13FifteenPuzzle9BoardView", "setNeedsLayout"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "animate"]
 - !private ["PSo15CALayerDelegate", "bounds"]
 - !private ["PSo15CALayerDelegate", "center"]
+- !private ["PSo15CALayerDelegate", "setNeedsLayout"]
 - !private ["PSo15CALayerDelegate", "tag"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC7CGPoint", "x"]
@@ -80,6 +87,8 @@ depends-member:
 - !private ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "numShuffles"]
+- !private ["Ps7CVarArg", "setNeedsLayout"]
 - !private ["Ps7CVarArg", "shared"]
 - ["Ps7CVarArg", "shuffleTiles"]
 - !private ["Ps7CVarArg", "tag"]
@@ -100,6 +109,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "numShuffles"]
+- !private ["Ps28CustomDebugStringConvertible", "setNeedsLayout"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - ["Ps28CustomDebugStringConvertible", "shuffleTiles"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
@@ -136,6 +147,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "numShuffles"]
+- !private ["Ps23CustomStringConvertible", "setNeedsLayout"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - ["Ps23CustomStringConvertible", "shuffleTiles"]
 - !private ["Ps23CustomStringConvertible", "tag"]
@@ -156,6 +169,8 @@ depends-member:
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "numShuffles"]
+- !private ["Ps9Equatable", "setNeedsLayout"]
 - !private ["Ps9Equatable", "shared"]
 - ["Ps9Equatable", "shuffleTiles"]
 - !private ["Ps9Equatable", "size"]
@@ -178,6 +193,8 @@ depends-member:
 - !private ["C13FifteenPuzzle12FifteenBoard", "canSlideTileUp"]
 - ["C13FifteenPuzzle12FifteenBoard", "deinit"]
 - !private ["C13FifteenPuzzle12FifteenBoard", "getRowAndColumn"]
+- !private ["C13FifteenPuzzle12FifteenBoard", "isSolved"]
+- !private ["C13FifteenPuzzle12FifteenBoard", "scramble"]
 - !private ["C13FifteenPuzzle12FifteenBoard", "slideTile"]
 - !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "NSLog"]
@@ -192,6 +209,8 @@ depends-member:
 - !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "numShuffles"]
+- !private ["Ps8Hashable", "setNeedsLayout"]
 - !private ["Ps8Hashable", "shared"]
 - ["Ps8Hashable", "shuffleTiles"]
 - !private ["Ps8Hashable", "tag"]
@@ -217,6 +236,7 @@ depends-member:
 - !private ["PSo8NSCoding", "center"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "setNeedsLayout"]
 - ["PSo8NSCoding", "shuffleTiles"]
 - !private ["PSo8NSCoding", "tag"]
 - ["PSo8NSCoding", "tileSelected"]
@@ -249,6 +269,8 @@ depends-member:
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "numShuffles"]
+- !private ["CSo8NSObject", "setNeedsLayout"]
 - !private ["CSo8NSObject", "shared"]
 - ["CSo8NSObject", "shuffleTiles"]
 - !private ["CSo8NSObject", "tag"]
@@ -265,6 +287,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "numShuffles"]
+- !private ["PSo16NSObjectProtocol", "setNeedsLayout"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - ["PSo16NSObjectProtocol", "shuffleTiles"]
 - !private ["PSo16NSObjectProtocol", "tag"]
@@ -281,10 +305,12 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "animate"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "center"]
+- !private ["PSo29UIAccessibilityIdentification", "setNeedsLayout"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo12UIAppearance", "animate"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "center"]
+- !private ["PSo12UIAppearance", "setNeedsLayout"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo21UIAppearanceContainer", "NSLog"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
@@ -295,6 +321,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "center"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "setNeedsLayout"]
 - ["PSo21UIAppearanceContainer", "shuffleTiles"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
 - ["PSo21UIAppearanceContainer", "tileSelected"]
@@ -304,6 +331,7 @@ depends-member:
 - !private ["CSo13UIApplication", "delegate"]
 - !private ["CSo13UIApplication", "shared"]
 - !private ["PSo21UIApplicationDelegate", "board"]
+- !private ["PSo21UIApplicationDelegate", "numShuffles"]
 - !private ["CSo8UIButton", "bounds"]
 - !private ["CSo8UIButton", "center"]
 - ["CSo8UIButton", "deinit"]
@@ -324,10 +352,12 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "animate"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "center"]
+- !private ["PSo17UICoordinateSpace", "setNeedsLayout"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo13UIDynamicItem", "animate"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "center"]
+- !private ["PSo13UIDynamicItem", "setNeedsLayout"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo18UIFocusEnvironment", "NSLog"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
@@ -338,6 +368,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "center"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "setNeedsLayout"]
 - ["PSo18UIFocusEnvironment", "shuffleTiles"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
 - ["PSo18UIFocusEnvironment", "tileSelected"]
@@ -346,6 +377,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "animate"]
 - !private ["PSo11UIFocusItem", "bounds"]
 - !private ["PSo11UIFocusItem", "center"]
+- !private ["PSo11UIFocusItem", "setNeedsLayout"]
 - !private ["PSo11UIFocusItem", "tag"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "AppDelegate"]
@@ -362,6 +394,8 @@ depends-member:
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "numShuffles"]
+- !private ["CSo11UIResponder", "setNeedsLayout"]
 - !private ["CSo11UIResponder", "shared"]
 - ["CSo11UIResponder", "shuffleTiles"]
 - !private ["CSo11UIResponder", "tag"]
@@ -378,6 +412,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "numShuffles"]
+- !private ["PSo30UIResponderStandardEditActions", "setNeedsLayout"]
 - !private ["PSo30UIResponderStandardEditActions", "shared"]
 - ["PSo30UIResponderStandardEditActions", "shuffleTiles"]
 - !private ["PSo30UIResponderStandardEditActions", "tag"]
@@ -403,6 +439,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "center"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "setNeedsLayout"]
 - ["PSo18UITraitEnvironment", "shuffleTiles"]
 - !private ["PSo18UITraitEnvironment", "tag"]
 - ["PSo18UITraitEnvironment", "tileSelected"]
@@ -411,6 +448,7 @@ depends-member:
 - !private ["CSo6UIView", "animate"]
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "center"]
+- !private ["CSo6UIView", "setNeedsLayout"]
 - !private ["CSo6UIView", "tag"]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "AppDelegate"]
@@ -450,6 +488,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "center"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setNeedsLayout"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tag"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -469,6 +508,8 @@ depends-member:
 - !private ["Ps9_Hashable", "delegate"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "numShuffles"]
+- !private ["Ps9_Hashable", "setNeedsLayout"]
 - !private ["Ps9_Hashable", "shared"]
 - ["Ps9_Hashable", "shuffleTiles"]
 - !private ["Ps9_Hashable", "tag"]
@@ -486,6 +527,7 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - "C13FifteenPuzzle11AppDelegate"
+- !private "C13FifteenPuzzle9BoardView"
 - "Sb"
 - !private "PSo15CALayerDelegate"
 - "V12CoreGraphics7CGFloat"

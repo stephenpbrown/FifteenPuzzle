@@ -29,7 +29,50 @@ class FifteenBoard {
     // Choose one of the “slidable” tiles at random and slide it into the empty space; repeat n times. We use this method to start a new game using a large value (e.g., 150) for n.
     func scramble(numTimes n : Int)
     {
+        NSLog("Shuffling")
         
+        for _ in 0 ..< n {
+        
+            let zeroPosition = getRowAndColumn(forTile: 0) // Find the position of zero in the grid
+            var lookForTiles = findTilesAdjacentToZero(atRow: zeroPosition.row, atColumn: zeroPosition.column) // Finds which directions from zero tiles exist
+        
+            let randomIndex = Int(arc4random_uniform(UInt32(lookForTiles.count))) // Randomly picks a direction for a tile to move into the zero's spot
+        
+            // Depending on the direction from zero chosen, it then moves that tile into the zero's position
+            switch lookForTiles[randomIndex] {
+                case .down:
+                    slideTile(atRow: (zeroPosition.row + 1), atColumn: zeroPosition.column, moveDirection: .up)
+                case .up:
+                    slideTile(atRow: (zeroPosition.row - 1), atColumn: zeroPosition.column, moveDirection: .down)
+                case .left:
+                    slideTile(atRow: zeroPosition.row, atColumn: (zeroPosition.column - 1), moveDirection: .right)
+                case .right:
+                    slideTile(atRow: zeroPosition.row, atColumn: (zeroPosition.column + 1), moveDirection: .left)
+                default:
+                    NSLog("Default")
+            }
+        }
+    }
+    
+    // Function that checks for any tile adjacent to zero, to know that a tile exists in that spot
+    func findTilesAdjacentToZero(atRow r : Int, atColumn c : Int) -> [slideDirection]
+    {
+        var slideDirections : [slideDirection] = []
+        
+        if r > 0 {
+            slideDirections += [.up]
+        }
+        if r < 3 {
+            slideDirections += [.down]
+        }
+        if c > 0 {
+            slideDirections += [.left]
+        }
+        if c < 3 {
+            slideDirections += [.right]
+        }
+        
+        return slideDirections
     }
     
     // Function to slide the tiles in the direction they're able to go
@@ -37,15 +80,18 @@ class FifteenBoard {
     {
         if(direction == slideDirection.down)
         {
-            let saveIndex = state[r][c]
-            state[r][c] = state[r+1][c]
-            state[r+1][c] = saveIndex
+            //let saveIndex = state[r][c]
+            //state[r][c] = state[r+1][c]
+            //state[r+1][c] = saveIndex
+            state[r+1][c] = state[r][c]
+            state[r][c] = 0
         }
         else if(direction == slideDirection.up)
         {
-            let saveIndex = state[r][c]
-            state[r][c] = state[r-1][c]
-            state[r-1][c] = saveIndex
+            //let saveIndex = state[r][c]
+            state[r-1][c] = state[r][c]
+            state[r][c] = 0
+            //state[r-1][c] = saveIndex
         }
         else if(direction == slideDirection.left)
         {

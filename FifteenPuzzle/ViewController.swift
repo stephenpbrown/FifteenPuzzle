@@ -56,6 +56,10 @@ class ViewController: UIViewController {
             board!.slideTile(atRow: index.row, atColumn: index.column, moveDirection: slideDirection)
             
             // Check if solved
+            if(board!.isSolved())
+            {
+                NSLog("Solved!")
+            }
             
             UIView.animate(withDuration: 0.5, animations: {sender.center = buttonCenter})
         }
@@ -63,7 +67,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func shuffleTiles(_ sender: AnyObject) {
-        NSLog("shuffle")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let board = appDelegate.board
+        board?.scramble(numTimes: appDelegate.numShuffles)
+        self.boardView.setNeedsLayout() // will trigger layoutSubviews to be invoked
     }
 }
 

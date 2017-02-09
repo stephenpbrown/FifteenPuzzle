@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C13FifteenPuzzle9BoardView", ""]
 provides-dynamic-lookup:
-- "layoutSubviews"
 - "boardRect"
+- "layoutSubviews"
 depends-top-level:
+- "BoardView"
+- !private "/"
 - !private "<="
 - "CGRect"
-- !private "/"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
 - !private "*"
-- "TernaryPrecedence"
-- !private "+"
-- !private "..<"
-- !private "CGFloat"
 - !private "Int"
-- "BoardView"
+- !private "..<"
 - !private "CGPoint"
+- "TernaryPrecedence"
+- !private "CGFloat"
 - !private "AppDelegate"
+- !private "+"
 - "UIView"
 - !private "UIApplication"
-- !private "-"
+- "CastingPrecedence"
 - !private ">"
+- !private "-"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
