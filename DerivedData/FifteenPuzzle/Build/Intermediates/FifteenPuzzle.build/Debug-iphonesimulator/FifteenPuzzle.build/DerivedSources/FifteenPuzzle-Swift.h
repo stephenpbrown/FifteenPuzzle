@@ -141,6 +141,7 @@ SWIFT_CLASS("_TtC13FifteenPuzzle11AppDelegate")
 
 SWIFT_CLASS("_TtC13FifteenPuzzle9BoardView")
 @interface BoardView : UIView
+- (void)awakeFromNib;
 - (void)layoutSubviews;
 - (CGRect)boardRect;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;

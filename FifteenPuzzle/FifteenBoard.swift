@@ -80,30 +80,23 @@ class FifteenBoard {
     {
         if(direction == slideDirection.down)
         {
-            //let saveIndex = state[r][c]
-            //state[r][c] = state[r+1][c]
-            //state[r+1][c] = saveIndex
             state[r+1][c] = state[r][c]
             state[r][c] = 0
         }
         else if(direction == slideDirection.up)
         {
-            //let saveIndex = state[r][c]
             state[r-1][c] = state[r][c]
             state[r][c] = 0
-            //state[r-1][c] = saveIndex
         }
         else if(direction == slideDirection.left)
         {
-            let saveIndex = state[r][c]
-            state[r][c] = state[r][c-1]
-            state[r][c-1] = saveIndex
+            state[r][c-1] = state[r][c]
+            state[r][c] = 0
         }
         else if(direction == slideDirection.right)
         {
-            let saveIndex = state[r][c]
-            state[r][c] = state[r][c+1]
-            state[r][c+1] = saveIndex
+            state[r][c+1] = state[r][c]
+            state[r][c] = 0
         }
         else
         {
