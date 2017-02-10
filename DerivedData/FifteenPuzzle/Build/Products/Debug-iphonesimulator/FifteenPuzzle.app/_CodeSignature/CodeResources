@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		7zOHtrmoAl3pDOcfo1IakVbI/dA=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		8bUYYyCvcE9e4GgzheAIVSrBaF0=
@@ -83,6 +87,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7zOHtrmoAl3pDOcfo1IakVbI/dA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ugQuy6sLOIMAbO1L0r5WHTztV9S21SzpXh9wA0taO/4=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>

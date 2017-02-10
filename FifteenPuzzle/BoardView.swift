@@ -18,7 +18,7 @@ class BoardView: UIView {
     }
     */
 
-    /*
+    
     override func awakeFromNib() {
         let tileImage = UIImage(named: "Tile")
         for tag in 1 ... 15 {
@@ -27,7 +27,7 @@ class BoardView: UIView {
             button.backgroundColor = UIColor.clear // transparent
         }
     }
-     */
+ 
     
     override func layoutSubviews() {
         super.layoutSubviews() // Let autolayout engine finish first
