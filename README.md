@@ -1,8 +1,8 @@
 Project Title: Fifteen Puzzle
 
 Author:
-Stephen Brown
-stephen.p.brown@wsu.edu
+Stephen Brown\n
+stephen.p.brown@wsu.edu\n
 11466405
 
 Fifteen Puzzle:
