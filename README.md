@@ -1,7 +1,7 @@
 Project Title: Fifteen Puzzle
 
 Author:
-Stephen Brown - stephen.p.brown@wsu.edu - 11466405
+Stephen Brown | stephen.p.brown@wsu.edu | 11466405
 
 Fifteen Puzzle:
 This project involved utilizing IB and the model-view-matrix paradigm to create a fifteen tiled puzzle.
