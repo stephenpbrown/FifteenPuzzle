@@ -32,8 +32,10 @@
                                                 <rect key="frame" x="27" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665140968934" green="0.99879545693802563" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="1"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWH-4Y-RQL"/>
                                                 </connections>
@@ -42,8 +44,10 @@
                                                 <rect key="frame" x="105" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="2"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s37-G6-HLi"/>
                                                 </connections>
@@ -52,8 +56,10 @@
                                                 <rect key="frame" x="183" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6B-HI-Iwc"/>
                                                 </connections>
@@ -62,8 +68,10 @@
                                                 <rect key="frame" x="261" y="34" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="4"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofG-nw-Tv2"/>
                                                 </connections>
@@ -72,8 +80,10 @@
                                                 <rect key="frame" x="27" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtT-li-ixu"/>
                                                 </connections>
@@ -82,8 +92,10 @@
                                                 <rect key="frame" x="105" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="6"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smR-7t-Z3j"/>
                                                 </connections>
@@ -92,8 +104,10 @@
                                                 <rect key="frame" x="183" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="7"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Uj-gn-rlc"/>
                                                 </connections>
@@ -102,8 +116,10 @@
                                                 <rect key="frame" x="261" y="109" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="8"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3B-0H-zL9"/>
                                                 </connections>
@@ -112,8 +128,10 @@
                                                 <rect key="frame" x="27" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="9"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qes-if-tXS"/>
                                                 </connections>
@@ -122,8 +140,10 @@
                                                 <rect key="frame" x="105" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="10"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="10">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4U-bi-4TJ"/>
                                                 </connections>
@@ -132,8 +152,10 @@
                                                 <rect key="frame" x="183" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="11"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="11">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFq-KD-m6e"/>
                                                 </connections>
@@ -142,8 +164,10 @@
                                                 <rect key="frame" x="261" y="184" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="12">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGH-x2-StX"/>
                                                 </connections>
@@ -152,8 +176,10 @@
                                                 <rect key="frame" x="27" y="259" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="13"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="13">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ach-nH-Gtm"/>
                                                 </connections>
@@ -162,8 +188,10 @@
                                                 <rect key="frame" x="105" y="259" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="14"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="14">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfD-uu-iPu"/>
                                                 </connections>
@@ -172,20 +200,22 @@
                                                 <rect key="frame" x="183" y="259" width="70" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.49576665139999998" green="0.99879545690000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="15"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="15">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tileSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkl-q0-uIO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.31364470636365399" green="0.54700906136467964" blue="0.72662321891191706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="e1c-uy-V62" secondAttribute="height" multiplier="1:1" id="uMS-90-wKi"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.22773990154321769" green="0.39718760511775136" blue="0.527606865273057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="e1c-uy-V62" firstAttribute="height" relation="lessThanOrEqual" secondItem="IqD-5v-QCJ" secondAttribute="height" constant="-16" id="8rx-lt-poc"/>
                                     <constraint firstItem="e1c-uy-V62" firstAttribute="centerY" secondItem="IqD-5v-QCJ" secondAttribute="centerY" id="HdD-DD-3CV"/>
@@ -203,14 +233,6 @@
                                         <connections>
                                             <action selector="shuffleTiles:" destination="BYZ-38-t0r" id="0d4-F0-opQ"/>
                                         </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gkp-FI-pOl"/>
-                                    <barButtonItem style="plain" id="rBr-vC-lKE">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W34-hG-vg7">
-                                            <rect key="frame" x="313" y="7" width="46" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Photo"/>
-                                        </button>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
