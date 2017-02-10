@@ -25,7 +25,6 @@ class ViewController: UIViewController {
     
     @IBAction func tileSelected(_ sender: UIButton) {
         let tag = sender.tag
-        //NSLog("tileSelected: \(tag)")
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let board = appDelegate.board
@@ -46,19 +45,20 @@ class ViewController: UIViewController {
             slide = false
         }
         
+        
         if (slide)
         {
             let index = board!.getRowAndColumn(forTile: tag)
             
             let slideDirection = board!.canSlideTile(atRow: index.row, Column: index.column)
-            NSLog("\(index) \(slideDirection)")
             
             board!.slideTile(atRow: index.row, atColumn: index.column, moveDirection: slideDirection)
             
             // Check if solved
             if(board!.isSolved())
             {
-                NSLog("Solved!")
+                let myString = "Solved!"
+                NSLog("\(myString)")
             }
             
             UIView.animate(withDuration: 0.5, animations: {sender.center = buttonCenter})

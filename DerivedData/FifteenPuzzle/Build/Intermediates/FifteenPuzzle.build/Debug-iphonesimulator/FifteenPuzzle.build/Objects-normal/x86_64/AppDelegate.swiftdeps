@@ -7,40 +7,38 @@ provides-nominal:
 provides-member:
 - ["C13FifteenPuzzle11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "application"
-- "numShuffles"
-- "applicationWillResignActive"
-- "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
+- "applicationWillResignActive"
+- "application"
+- "window"
+- "numShuffles"
 - "applicationWillTerminate"
 depends-top-level:
-- "FifteenBoard"
-- !private "StringLiteralType"
-- "sandboxArchivePath"
-- !private "Int"
-- "AppDelegate"
-- "String"
-- !private "BooleanLiteralType"
-- !private "FileManager"
-- "UIApplicationDelegate"
-- "Bool"
-- !private "NSArray"
-- "UIApplication"
-- "UIWindow"
 - "UIResponder"
-- !private "NSSearchPathForDirectoriesInDomains"
-- !private "NSLog"
-- "CastingPrecedence"
+- "AppDelegate"
+- "Bool"
 - "UIApplicationLaunchOptionsKey"
+- !private "NSSearchPathForDirectoriesInDomains"
 - !private "NSString"
 - "AssignmentPrecedence"
+- "UIWindow"
+- "CastingPrecedence"
+- !private "FileManager"
+- "sandboxArchivePath"
+- "UIApplicationDelegate"
+- !private "StringLiteralType"
+- "UIApplication"
+- "String"
+- !private "Int"
+- "FifteenBoard"
+- !private "NSArray"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "FifteenBoard"]
 - !private ["Ps9AnyObject", "FileManager"]
 - !private ["Ps9AnyObject", "NSArray"]
-- !private ["Ps9AnyObject", "NSLog"]
 - !private ["Ps9AnyObject", "appendingPathComponent"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -70,7 +68,6 @@ depends-member:
 - !private ["C13FifteenPuzzle11AppDelegate", "FileManager"]
 - !private ["C13FifteenPuzzle11AppDelegate", "Int"]
 - !private ["C13FifteenPuzzle11AppDelegate", "NSArray"]
-- !private ["C13FifteenPuzzle11AppDelegate", "NSLog"]
 - ["C13FifteenPuzzle11AppDelegate", "UIApplication"]
 - ["C13FifteenPuzzle11AppDelegate", "UIApplicationLaunchOptionsKey"]
 - ["C13FifteenPuzzle11AppDelegate", "UIWindow"]
@@ -108,7 +105,6 @@ depends-member:
 - !private ["Ps7CVarArg", "FileManager"]
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "NSArray"]
-- !private ["Ps7CVarArg", "NSLog"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "appendingPathComponent"]
 - ["Ps7CVarArg", "application"]
@@ -141,7 +137,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "FileManager"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "NSArray"]
-- !private ["Ps28CustomDebugStringConvertible", "NSLog"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "appendingPathComponent"]
 - ["Ps28CustomDebugStringConvertible", "application"]
@@ -179,7 +174,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "FileManager"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "NSArray"]
-- !private ["Ps23CustomStringConvertible", "NSLog"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "appendingPathComponent"]
@@ -208,7 +202,6 @@ depends-member:
 - !private ["Ps9Equatable", "FifteenBoard"]
 - !private ["Ps9Equatable", "FileManager"]
 - !private ["Ps9Equatable", "NSArray"]
-- !private ["Ps9Equatable", "NSLog"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "appendingPathComponent"]
 - ["Ps9Equatable", "application"]
@@ -258,7 +251,6 @@ depends-member:
 - !private ["Ps8Hashable", "FifteenBoard"]
 - !private ["Ps8Hashable", "FileManager"]
 - !private ["Ps8Hashable", "NSArray"]
-- !private ["Ps8Hashable", "NSLog"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "appendingPathComponent"]
 - ["Ps8Hashable", "application"]
@@ -320,7 +312,6 @@ depends-member:
 - !private ["CSo8NSObject", "FileManager"]
 - !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSArray"]
-- !private ["CSo8NSObject", "NSLog"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - ["CSo8NSObject", "UIWindow"]
@@ -348,7 +339,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "FifteenBoard"]
 - !private ["PSo16NSObjectProtocol", "FileManager"]
 - !private ["PSo16NSObjectProtocol", "NSArray"]
-- !private ["PSo16NSObjectProtocol", "NSLog"]
 - !private ["PSo16NSObjectProtocol", "appendingPathComponent"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
@@ -411,7 +401,6 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "FifteenBoard"]
 - !private ["PSo21UIApplicationDelegate", "FileManager"]
 - !private ["PSo21UIApplicationDelegate", "NSArray"]
-- !private ["PSo21UIApplicationDelegate", "NSLog"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -434,7 +423,6 @@ depends-member:
 - !private ["CSo11UIResponder", "FileManager"]
 - !private ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSArray"]
-- !private ["CSo11UIResponder", "NSLog"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -460,7 +448,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "FifteenBoard"]
 - !private ["PSo30UIResponderStandardEditActions", "FileManager"]
 - !private ["PSo30UIResponderStandardEditActions", "NSArray"]
-- !private ["PSo30UIResponderStandardEditActions", "NSLog"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
@@ -495,7 +482,6 @@ depends-member:
 - !private ["Ps9_Hashable", "FifteenBoard"]
 - !private ["Ps9_Hashable", "FileManager"]
 - !private ["Ps9_Hashable", "NSArray"]
-- !private ["Ps9_Hashable", "NSLog"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "appendingPathComponent"]
 - ["Ps9_Hashable", "application"]

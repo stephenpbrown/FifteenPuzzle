@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "0ed1489ea09a730841e7d75a634d7d23"
-build_time: [539997986, 652673000]
+build_time: [540006526, 507529000]
 inputs:
-  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/BoardView.swift": [539997986, 0]
-  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/ViewController.swift": [539988790, 0]
-  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/FifteenBoard.swift": [539994056, 0]
-  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/AppDelegate.swift": [539996621, 0]
+  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/BoardView.swift": [540005882, 0]
+  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/ViewController.swift": [540005910, 0]
+  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/FifteenBoard.swift": [540004643, 0]
+  "/home-local/aerologic/FifteenPuzzle/FifteenPuzzle/AppDelegate.swift": [540005921, 0]

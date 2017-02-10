@@ -29,8 +29,6 @@ class FifteenBoard {
     // Choose one of the “slidable” tiles at random and slide it into the empty space; repeat n times. We use this method to start a new game using a large value (e.g., 150) for n.
     func scramble(numTimes n : Int)
     {
-        NSLog("Shuffling")
-        
         for _ in 0 ..< n {
         
             let zeroPosition = getRowAndColumn(forTile: 0) // Find the position of zero in the grid
@@ -49,7 +47,7 @@ class FifteenBoard {
                 case .right:
                     slideTile(atRow: zeroPosition.row, atColumn: (zeroPosition.column + 1), moveDirection: .left)
                 default:
-                    NSLog("Default")
+                    NSLog("In scramble: Default")
             }
         }
     }
@@ -130,20 +128,10 @@ class FifteenBoard {
     // Determine if puzzle is in solved configuration.
     func isSolved() -> Bool
     {
-//        if(state[0][0] != 1)
-//        {
-//            return false
-//        }
-        
         for i in 0 ..< 4
         {
             for j in 0 ..< 4
             {
-//                var index = state[i][j]
-//                
-//                
-                // Make more dynamic later
-                // Check each value and make sure the next value is the previous value + 1 until you reach 0
                 if(state[i][j] != solved[i][j])
                 {
                     return false

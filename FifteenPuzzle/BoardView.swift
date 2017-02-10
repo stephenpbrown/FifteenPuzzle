@@ -64,5 +64,4 @@ class BoardView: UIView {
         let topMargin = (H - boardSize)/2
         return CGRect(x: leftMargin, y: topMargin, width: boardSize, height: boardSize)
     }
-    
 }

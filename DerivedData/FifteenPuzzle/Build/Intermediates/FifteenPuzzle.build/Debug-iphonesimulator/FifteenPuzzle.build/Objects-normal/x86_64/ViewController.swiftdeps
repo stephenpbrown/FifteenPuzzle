@@ -6,28 +6,27 @@ provides-nominal:
 provides-member:
 - ["C13FifteenPuzzle14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "tileSelected"
 - "boardView"
-- "shuffleTiles"
 - "didReceiveMemoryWarning"
+- "tileSelected"
+- "shuffleTiles"
+- "viewDidLoad"
 depends-top-level:
+- "UIViewController"
 - !private "UIApplication"
 - "BoardView"
-- "UIViewController"
-- !private "StringLiteralType"
-- "AnyObject"
-- !private "AppDelegate"
-- !private "BooleanLiteralType"
-- !private "UnicodeScalarType"
 - "ViewController"
-- !private "-="
-- !private "UIView"
+- "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "NSLog"
 - !private "+="
-- "AssignmentPrecedence"
+- "AnyObject"
 - "UIButton"
+- !private "UIView"
+- !private "StringLiteralType"
+- !private "-="
+- !private "BooleanLiteralType"
+- !private "AppDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "NSLog"]
 - !private ["Ps9AnyObject", "UIApplication"]
