@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let archiveName = sandboxArchivePath()
         if FileManager.default.fileExists(atPath: archiveName) { // If saved file exists, load it, otherwise shuffle
             let savedState = NSArray(contentsOfFile: archiveName) as! [[Int]] // Grab saved state and cast it to a double int array
-           // board!.state = savedState // Set state to the saved state
+            board!.state = savedState // Set state to the saved state
         }
         else {
            self.board!.scramble(numTimes: numShuffles)
