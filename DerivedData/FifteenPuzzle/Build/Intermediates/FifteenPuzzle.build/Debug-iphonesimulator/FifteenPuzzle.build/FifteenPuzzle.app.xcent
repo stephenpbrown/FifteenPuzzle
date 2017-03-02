@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>edu.wsu.vancouver.FifteenPuzzle</string>
+	<string>266548894Y.edu.wsu.vancouver.FifteenPuzzle</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>edu.wsu.vancouver.FifteenPuzzle</string>
+		<string>266548894Y.edu.wsu.vancouver.FifteenPuzzle</string>
 	</array>
 </dict>
 </plist>

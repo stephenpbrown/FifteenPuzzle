@@ -57,8 +57,23 @@ class ViewController: UIViewController {
             // Check if solved
             if(board!.isSolved())
             {
-                let myString = "Solved!"
-                NSLog("\(myString)")
+                let alertController = UIAlertController(
+                    title: "Great job! You solved the puzzle!",
+                    message: "",
+                    preferredStyle: .alert
+                )
+                alertController.addAction(UIAlertAction(
+                    title: "New Game",
+                    style: .default,
+                    handler: { (UIAlertAction) -> Void in
+                        board!.scramble(numTimes: appDelegate.numShuffles)
+                        self.boardView.setNeedsLayout() // will trigger layoutSubviews to be invoked
+                })
+                )
+
+                self.present(alertController, animated: true, completion: nil)
+                //let myString = "Solved!"
+                //NSLog("\(myString)")
             }
             
             UIView.animate(withDuration: 0.5, animations: {sender.center = buttonCenter})

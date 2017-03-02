@@ -127,6 +127,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC13FifteenPuzzle11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic, readonly) NSInteger numShuffles;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -140,17 +141,23 @@ SWIFT_CLASS("_TtC13FifteenPuzzle11AppDelegate")
 
 SWIFT_CLASS("_TtC13FifteenPuzzle9BoardView")
 @interface BoardView : UIView
+- (void)awakeFromNib;
 - (void)layoutSubviews;
+- (CGRect)boardRect;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC13FifteenPuzzle14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+@property (nonatomic, weak) IBOutlet BoardView * _Null_unspecified boardView;
+- (IBAction)tileSelected:(UIButton * _Nonnull)sender;
+- (IBAction)shuffleTiles:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
