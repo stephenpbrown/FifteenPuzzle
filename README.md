@@ -1,7 +1,10 @@
 Project Title: Fifteen Puzzle
 
 Author:
-Stephen Brown | stephen.p.brown@wsu.edu | 11466405
+Stephen Brown | brownstephenp@gmail.com
+
+License:
+This project is for learning uses only and cannot be used for financial gain.
 
 Fifteen Puzzle:
 This project involved utilizing IB and the model-view-matrix paradigm to create a fifteen tiled puzzle.
@@ -17,7 +20,7 @@ game it will resume from where you left off.
 
 Build/Run Info:
 1.  Choose a directory to clone repository into
-2.  run "git clone git@gitlab.encs.vancouver.wsu.edu:aerologic/FifteenPuzzle.git" in terminal
+2.  run "git clone git@github.com:stephenpbrown/FifteenPuzzle.git" in terminal
 3.  Open Xcode and navigate to the project using file->open
 4.  Once project loads into Xcode, hit the "play/build" button in the upper left cornerin order to build and run the program.
 (NOTE: If using the encs lab computers, make sure to run /etc/devme, /etc/homeme, and /etc/simme in order to use
