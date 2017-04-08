@@ -3,8 +3,8 @@ Project Title: Fifteen Puzzle
 
 Author:
 ----------
->*Name: Stephen Brown
->*Email: BrownStephenP@gmail.com
+>* Name: Stephen Brown
+>* Email: BrownStephenP@gmail.com
 
 License:
 ----------
